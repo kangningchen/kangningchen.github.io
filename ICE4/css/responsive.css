@@ -1,0 +1,161 @@
+@media only screen and (min-width: 680px)
+
+{
+
+	.top-nav ul li {
+		display: inline-block;
+
+	}
+
+	.top-nav ul li a {
+		padding: 1em;
+	}
+
+
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+  		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  		grid-gap: 10px;
+	}
+
+	.black {
+	    grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start:1;
+	    grid-row-end:2;
+
+	}
+
+	.maroon {
+		grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start:2;
+	    grid-row-end:3;
+	}
+
+	.yellow {
+		grid-column-start: 1;
+	    grid-column-end: 2;
+	    grid-row-start:3;
+	    grid-row-end:4;
+	}
+
+	.purple {
+		grid-column-start: 2;
+	    grid-column-end: 3;
+	    grid-row-start:3;
+	    grid-row-end:4;
+	}
+
+	.green {
+		grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start:4;
+	    grid-row-end:5;
+	}
+
+	.blue {
+		grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start:5;
+	    grid-row-end:6;
+	}
+
+	.red {
+	    grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start:6;
+	    grid-row-end:7;
+
+	}
+
+
+
+	
+}
+
+@media only screen and (min-width: 1000px)
+
+{
+	.logo {
+		float: left;
+	}
+
+	.top-nav ul {
+		float: right;
+	}
+
+	.top-nav ul li {
+		display: inline-block;
+		border-top: 0;
+
+	}
+
+	.top-nav ul li a {
+		padding: 1em;
+	}
+
+
+	.photo-grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+  		grid-template-rows: 1fr 1fr 1fr;
+  		grid-gap: 10px;
+	}
+
+	.black {
+	    grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start:1;
+	    grid-row-end:2;
+
+	}
+
+	.maroon {
+		grid-column-start: 3;
+	    grid-column-end: 5;
+	    grid-row-start:1;
+	    grid-row-end:2;
+	}
+
+	.yellow {
+		grid-column-start: 1;
+	    grid-column-end: 2;
+	    grid-row-start:2;
+	    grid-row-end:3;
+	}
+
+	.purple {
+		grid-column-start: 2;
+	    grid-column-end: 3;
+	    grid-row-start:2;
+	    grid-row-end:3;
+	}
+
+	.green {
+		grid-column-start: 3;
+	    grid-column-end: 5;
+	    grid-row-start:2;
+	    grid-row-end:3;
+	}
+
+	.blue {
+		grid-column-start: 1;
+	    grid-column-end: 3;
+	    grid-row-start:3;
+	    grid-row-end:4;
+	}
+
+	.red {
+	    grid-column-start: 3;
+	    grid-column-end: 5;
+	    grid-row-start:3;
+	    grid-row-end:4;
+
+	}
+
+	
+
+	
+}
