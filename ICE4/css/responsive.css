@@ -1,9 +1,20 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @media only screen and (min-width: 680px)
 
 {
 
+	.top-nav ul {
+		text-align: center;
+	}
+	
+
 	.top-nav ul li {
 		display: inline-block;
+		border-top: 1px solid red;
+		
 
 	}
 

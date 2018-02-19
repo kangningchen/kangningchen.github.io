@@ -35,8 +35,8 @@ div ul {
 aside {
 	float: right;
 	background-color: white;
-	/*padding-bottom: 265px;*/
-	/*padding-right: 10px;*/
+	/*padding-bottom: 20px;*/
+	padding-right: 10px;
 	height: 90vh;
 	width:300px;
 	background: url("http://www.literarygenius.info/images/william-shakespeare.jpg") no-repeat center;
