@@ -1,0 +1,49 @@
+body {
+	background-color: #dddddd;
+}
+
+h2 {
+	text-shadow: 2px 2px 4px #000000;
+	color: #e8ba17;
+	text-align: center;
+}
+
+h4 {
+	font-family: Georgia, sans-serif;
+	font-weight: bold;
+	font-size: 100%;
+	text-decoration: none;
+
+}
+
+legend {
+	font-family: Georgia, sans-serif;
+	font-weight: bold;
+	font-size: 100%;
+	background-color: #e8ba17;
+	color: #ffffff;
+}
+
+label {
+	font-family: Georgia, sans-serif
+}
+
+input {
+	border-radius: 3px;
+}
+
+
+button {
+	background-color: #e84416;
+	color: white;
+	font-weight: bold;
+	font-size: 75%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 4px #000000;
+	margin-top: 1%;
+}
+
+#errormsg {
+	color: red;
+	display: none;
+}
