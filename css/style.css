@@ -61,6 +61,7 @@ h1 {
 	font-weight: bold;
 /*	margin-top: .5em*/
 	margin-bottom: .5em;
+	text-align: center;
 
 }
 
@@ -83,15 +84,17 @@ a {
 
 
 input{
-	width:30%;
-	margin: 1%;
+	width:50%;
+	margin-bottom: 2%;
 	background-color: #f9f2de;
+	border-radius: 5px;
 }
 
 textarea{
 	background-color: #f9f2de;
-	width: 65%;
+	width: 90%;
 	margin-top: .5em;
+	border-radius: 5px;
 }
 
 input[type="submit"] {
@@ -101,6 +104,7 @@ input[type="submit"] {
 	border-radius: 10px;
 	font-weight: bold;
 	font-size: 1em;
+	margin-top: 2%;
 	margin-bottom: 7em;
 
 }
@@ -207,7 +211,6 @@ section {
 }
 
 .main-content-home h1 {
-	text-align: center;
 	padding-top: 3em;
 
 }
@@ -229,17 +232,31 @@ aside img {
 	margin: 5% auto;
 }
 
-.main-content-contact h1, .main-content-contact p {
-	text-align: center;
+.main-content-about h1 {
+	text-align: left;
 }
 
+.main-content-contact h1 {
+	text-align: center;
+	padding-top: 2em;
+}
+
+.main-content-contact p {
+	text-align: center;
+	padding-bottom: 1em;
+}
 
 form {
-
-	padding-left: 30%
+	padding-left: 5%
 }
+
+
 /*Projects Page*/
-.main-content-projects section {
+.main-content-projects {
+	display: relative;
+}
+
+section.about {
 	width: 100%;
 
 }
@@ -247,21 +264,24 @@ form {
 .panels {
 	list-style-type: none;
 	padding: 5%;
+	display: absolute;
+	left: 50%;
+	right: 50%;
+	width: 80%;
 
 }
 
 .panels li {
 	position: relative;
-	width: 80%;
-	margin: 2px;
 	display: block;
+	margin-bottom: 2%;
 
 }
 
 .panels li div {
 	width: 100%;
 	cursor: pointer;
-	padding: 10%;
+	padding: 5%;
 
 }
 
@@ -289,3 +309,21 @@ form {
 	100% { transform: rotateY(90deg);}
 }
 
+/*Travel Page*/
+.main-content-travel {
+	display: relative;
+}
+.main-content-travel img {
+	display: block;
+	width: 90%;
+	height: auto;
+	right: 50%;
+	left: 50%;
+	padding: 1%;
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
+
+}
