@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 @import url(https://fonts.googleapis.com/css?family=Russo+One);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Limelight);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -70,6 +71,16 @@ h2 {
 	font-weight: bold;
 	margin-bottom: 1em;
 	color: #e89f29;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	font-family: 'Limelight', serif;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 p {
@@ -271,6 +282,10 @@ section.about {
 
 }
 
+div.back ul li {
+	list-style-type: square;
+}
+
 .panels li {
 	position: relative;
 	display: block;
@@ -282,18 +297,23 @@ section.about {
 	width: 100%;
 	cursor: pointer;
 	padding: 5%;
+	display: relative;
 
 }
 
 .panels div.back {
 	transform: rotateY(90deg);
-	background-color: #e8bd22;
+	background-color: #f4eb6e;
+	width: 100%;
+	height: 20em;
 }
 
 .panels div.front {
 	position: absolute;
-	background-color: #e86609;
+	background-color: #efbc69;
 	text-align: center;
+	width: 100%;
+	height: 20em;
 }
 
 .panels li:hover div.front {
