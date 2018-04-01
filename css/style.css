@@ -282,9 +282,13 @@ section.about {
 
 }
 
+
+
 div.back ul li {
 	list-style-type: square;
+	color: #ffffff;
 }
+
 
 .panels li {
 	position: relative;
@@ -303,14 +307,14 @@ div.back ul li {
 
 .panels div.back {
 	transform: rotateY(90deg);
-	background-color: #f4eb6e;
+	background-color: #9b153a;
 	width: 100%;
 	height: 20em;
 }
 
 .panels div.front {
 	position: absolute;
-	background-color: #efbc69;
+	background-color: #590d22;
 	text-align: center;
 	width: 100%;
 	height: 20em;
@@ -327,6 +331,11 @@ div.back ul li {
 @keyframes twirl {
 	0%{ transform: rotateY(0deg);}
 	100% { transform: rotateY(90deg);}
+}
+
+.fa-pencil-alt, .fa-terminal, .fa-chart-line, .fa-laptop {
+	color: #ffffff;
+	font-size: 7em;
 }
 
 /*Travel Page*/
