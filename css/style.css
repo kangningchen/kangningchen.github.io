@@ -70,7 +70,7 @@ h2 {
 	font-size: 1.2em;
 	font-weight: bold;
 	margin-bottom: 1em;
-	color: #e89f29;
+	color: #bd5d38;
 }
 
 h3 {
@@ -89,7 +89,7 @@ p {
 
 a {
 	text-decoration: none;
-	color: #e0b118;
+	color: #bd5d38;
 	font-weight: bold;
 }
 
@@ -191,7 +191,7 @@ nav ul li a:hover {
 }
 
 .current-page {
-	color: #e5c157;
+	color: #fffa00;
 
 }
 
