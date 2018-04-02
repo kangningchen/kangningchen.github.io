@@ -2,6 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Russo+One);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url(https://fonts.googleapis.com/css?family=Limelight);
+
+/*CSS Reset*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,14 +56,15 @@ table {
 
 /*My code starts here*/
 
-html {
+/*html {
 	box-sizing: border-box;
-}
+}*/
 
 h1 {
+	font-family: 'Russo One';
 	font-size: 2em;
 	font-weight: bold;
-/*	margin-top: .5em*/
+	padding-top: 1em;
 	margin-bottom: .5em;
 	text-align: center;
 
@@ -93,15 +97,26 @@ a {
 	font-weight: bold;
 }
 
+.main-content {
+	position: relative;	
+	font-family: 'Open Sans', serif;
+	position: relative;
 
-input{
-	width:50%;
+}
+
+section {
+	padding: 1% 5%;
+
+}
+
+input {
+	width: 50%;
 	margin-bottom: 2%;
 	background-color: #f9f2de;
 	border-radius: 5px;
 }
 
-textarea{
+textarea {
 	background-color: #f9f2de;
 	width: 90%;
 	margin-top: .5em;
@@ -149,20 +164,6 @@ header, footer {
 
 }
 
-.fab, .fas {
-	font-size: 1.5em;
-	padding: .2em .5em;
-	color: #9d9ba0;
-}
-.fab:hover, .fas:hover {
-	color: #ffffff;
-}
-
-footer p {
-	font-size: .75em;
-	padding-bottom: .5em;
-}
-
 nav ul {
 	display: block;
 
@@ -192,6 +193,7 @@ nav ul li a:hover {
 
 .current-page {
 	color: #fffa00;
+	border-bottom: 5px solid #fffa00;
 
 }
 
@@ -199,17 +201,19 @@ a .current-page {
 	list-style-type: square;
 }
 
-.main-content {
-/*	height:100vh;
-*/	position: relative;	
-	font-family: 'Open Sans', serif;
-	position: relative;
-/*	overflow: scroll;*/
+footer p {
+	font-size: .75em;
+	padding-bottom: .5em;
 }
 
-section {
-	padding: 1% 5%;
+.fab, .fas {
+	font-size: 1.5em;
+	padding: .2em .5em;
+	color: #9d9ba0;
+}
 
+.fab:hover, .fas:hover {
+	color: #ffffff;
 }
 
 
@@ -247,31 +251,12 @@ aside img {
 	text-align: left;
 }
 
-.main-content-contact h1 {
-	text-align: center;
-	padding-top: 2em;
-}
-
-.main-content-contact p {
-	text-align: center;
-	padding-bottom: 1em;
-}
-
-form {
-	padding-left: 5%
-}
-
 
 /*Projects Page*/
 
 
 .main-content-projects {
 	display: relative;
-}
-
-section.about {
-	width: 100%;
-
 }
 
 .panels {
@@ -283,8 +268,6 @@ section.about {
 	width: 80%;
 
 }
-
-
 
 div.back ul li {
 	list-style-type: square;
@@ -340,7 +323,24 @@ div.back ul li {
 	font-size: 7em;
 }
 
+/*Contact Page*/
+
+.main-content-contact h1 {
+	padding-top: 2em;
+}
+
+.main-content-contact p {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+form {
+	padding-left: 5%
+}
+
+
 /*Travel Page*/
+
 .main-content-travel {
 	display: relative;
 }
@@ -348,10 +348,8 @@ div.back ul li {
 	display: block;
 	width: 90%;
 	height: auto;
-	right: 50%;
-	left: 50%;
 	padding: 1%;
-	border: 1px solid black;
+	border: 1px solid #000000;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 1%;

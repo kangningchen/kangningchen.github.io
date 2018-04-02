@@ -1,18 +1,37 @@
 <!DOCTYPE html>	
 <html lang="en">
 <head>
-	<title>Kangning Chen About Page</title>
+	<title>Kangning Chen Contact Page</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">  
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
-<!-- 			<link rel="stylesheet" type="text/css" href="css/main.css"> -->
-
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+	<script type="text/javascript">
+	function checkInput() {
+	    try {
+	        var name = document.getElementById('name').value;
+	        var email = document.getElementById('email').value;
+	        var message = document.getElementById('message').value;
+	        if (name == null || name == "" || email == null || email == "" || email == null || email == "") {
+	            alert("All fields are required.");
+	            return false;
+	        }
+	        if ( email.indexOf('@') == -1 ) {
+	            alert("Invalid email address");
+	            return false;
+	        }
+	        return true;
+	    } catch(e) {
+	        return false;
+	    }
+	    return false;
+	}
+	</script>
 </head>
-<body class="body body-home">
+<body>
 	<header>
-		<nav id = "top-nav" class="top-nav">
+		<nav>
 			<div class="logo">
 			<a href="index.html"><img src="img/logo.png" alt="Kangning Chen's Home Page"></a>
        		</div>
@@ -27,7 +46,7 @@
 	<div class="main-content main-content-contact">
 		<h1>Contact Me</h1>
 		<p>Please contact me anytime. I would love to connect!</p>
-		<form action="mailto:knchen@umich.edu" method="post" enctype="text/plain">
+		<form action="mailto:knchen@umich.edu" method="post" enctype="text/plain" onsubmit="return checkInput()">
 			<label for="name">Name:</label>
 			<input type="text" name="name" id = "name"><br>
 			<label for="email">E-mail:</label>
