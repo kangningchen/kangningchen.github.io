@@ -9,23 +9,24 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 	<script type="text/javascript">
 	function checkInput() {
+		var errmsg = document.getElementById('errmsg');
+		errmsg.innerHTML = "";
+		var name = document.getElementById('name').value;
+		var email = document.getElementById('email').value;
+		var message = document.getElementById('message').value;	    
 	    try {
-	        var name = document.getElementById('name').value;
-	        var email = document.getElementById('email').value;
-	        var message = document.getElementById('message').value;
-	        if (name == null || name == "" || email == null || email == "" || email == null || email == "") {
-	            alert("All fields are required.");
+	        if (name == null || name == "" || email == null || email == "" || message == null || message == "" ) {
+	        	throw "All fields are required";
 	            return false;
 	        }
 	        if ( email.indexOf('@') == -1 ) {
-	            alert("Invalid email address");
+	            throw "Invalid email address";
 	            return false;
 	        }
-	        return true;
-	    } catch(e) {
+	    } catch(err) {
+	    	errmsg.innerHTML = err
 	        return false;
 	    }
-	    return false;
 	}
 	</script>
 </head>
@@ -46,6 +47,7 @@
 	<div class="main-content main-content-contact">
 		<h1>Contact Me</h1>
 		<p>Please contact me anytime. I would love to connect!</p>
+		<p id="errmsg"></p>
 		<form action="mailto:knchen@umich.edu" method="post" enctype="text/plain" onsubmit="return checkInput()">
 			<label for="name">Name:</label>
 			<input type="text" name="name" id = "name"><br>

@@ -338,6 +338,10 @@ form {
 	padding-left: 5%
 }
 
+#errmsg{
+	color: red;
+}
+
 
 /*Travel Page*/
 
