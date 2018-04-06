@@ -16,6 +16,7 @@
 	}
 
 	.logo {
+		padding-top: .5em;
 		max-width: 50%;
 
 	}
@@ -32,6 +33,12 @@
 		padding-left: 10%
 	}
 
+	#errmsg{
+		color: red;
+		padding-left: 10%;
+		text-align: left;
+	}
+
 	input{
 	width:30%;
 
@@ -39,6 +46,7 @@
 
 	textarea{
 		width: 80%;
+		border: none;
 	}
 
 	input[type="submit"] {
@@ -184,6 +192,10 @@
 	    grid-column-end: 4;
 	    grid-row-start:3;
 	    grid-row-end:4;				
+	}
+
+	.main-content-projects h1 {
+		margin-bottom: -.5em;
 	}
 
 	.panels {
