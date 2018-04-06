@@ -56,10 +56,6 @@ table {
 
 /*My code starts here*/
 
-/*html {
-	box-sizing: border-box;
-}*/
-
 
 h1 {
 	font-family: 'Russo One';
@@ -86,6 +82,7 @@ h3 {
 	font-family: 'Limelight', serif;
 	margin-top: auto;
 	margin-bottom: auto;
+
 }
 
 p {
@@ -104,12 +101,6 @@ a {
 	position: relative;
 
 }
-
-section {
-	padding: 1% 5%;
-
-}
-
 
 
 
@@ -154,7 +145,7 @@ nav ul li {
 	list-style-type: none;
 	padding: 1em;
 	margin: .5em;
-	border-top: 1px solid #ffffff;
+	border-top: 1px solid #000000;
 
 }
 
@@ -176,10 +167,6 @@ nav ul li a:hover {
 	color: #fffa00;
 	border-bottom: 5px solid #fffa00;
 
-}
-
-a .current-page {
-	list-style-type: square;
 }
 
 footer p {
@@ -220,16 +207,21 @@ footer p {
 
 /*About Page*/
 
+.main-content-about h1 {
+	text-align: left;
+}
+
+section {
+	padding: 1% 5%;
+
+}
+
 aside img {
 	border-radius: 50%;
 	width: 50%;
 	height:auto;
 	display: block;
 	margin: 5% auto;
-}
-
-.main-content-about h1 {
-	text-align: left;
 }
 
 
@@ -240,6 +232,7 @@ aside img {
 	display: relative;
 }
 
+
 .panels {
 	list-style-type: none;
 	padding: 5%;
@@ -248,11 +241,6 @@ aside img {
 	right: 50%;
 	width: 80%;
 
-}
-
-div.back ul li {
-	list-style-type: square;
-	color: #ffffff;
 }
 
 
@@ -329,7 +317,7 @@ form {
 }
 
 .required {
-	color: red;
+	color: #a50606;
 }
 
 input {
