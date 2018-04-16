@@ -1,3 +1,7 @@
+
+body {
+	background-image: url("../images/sun-pattern.png");
+}
 img {
 	display: block;
 	border: 5px solid blue;
