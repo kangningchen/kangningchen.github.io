@@ -4,30 +4,24 @@
 	<title>Kangning Chen</title>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+
+      $('#hideImage').click(function(){
+        $('#one').hide();
+
+      });
+    });
+    </script>
 </head>
 <body>
 	<h1>Kangning Chen</h1>
 	<div class="container">
 		<img id="one" src="images/examPic.JPG" alt="Colleen with two other girls">
 		<img id="two" src="images/UMSI-logo.jpg" alt="University of Michigan School of Information logo">
-	<div>
-	<button onclick="hideImage()">Hide Image</button>
-	<button onclick="showImage()">Show Image</button>
-	<p id="demo"><p>
-    <script>
-	// function hideImage(){
-	// 	var imageOne = document.getElementById('one');
-	// 	var displaySetting = imageOne.style.display;
-
-	// 	if (displaySetting == 'block') {
-	// 		imageOne.style.display == 'none';
-	// 	}
-
-	// } 
-	function Test() {
-		getElementById('demo').innerHTML = "Hi"
-	}
-    </script>
+	</div>
+	<button type="button" id="hideImage">Hide Image</button>
+	<button type="button">Show Image</button>
 </body>
 </html>
